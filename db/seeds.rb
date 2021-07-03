@@ -7,9 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "faker"
 
+puts "Generating 10 tasks"
 10.times do
   Task.create(
     title: Faker::Name.name,
     details: Faker::Address.full_address
   )
 end
+puts "Done!"
