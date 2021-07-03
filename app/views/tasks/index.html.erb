@@ -1,5 +1,7 @@
 <div class="container">
   <h1>My tasks</h1>
+  <button type="button" class="btn btn-primary"><%= link_to "New task", tasks_new_path %></button>
+  <h2> <%= link_to "New task", tasks_new_path %> </h2>
   <div class="row">
     <ul>
     <% @tasks.each do |task| %>
